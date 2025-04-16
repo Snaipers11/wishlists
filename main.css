@@ -1,0 +1,376 @@
+body {
+    display: contents;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    height: 6rem;
+    width: 100dvw;
+    font-size: 4rem;
+    font-weight: bolder;
+    border-bottom: 2px solid rgb(225, 225, 225);
+    background-color: #ffffff;
+    z-index: 10;
+}
+header div {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25rem;
+    gap: 0.25rem;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    transition-duration: 0.4s;
+}
+header form:hover{
+    background-color: rgb(227, 227, 227);
+}
+header img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.phone {
+    display: none;
+}
+input {
+    border-radius: 20px;
+    border: solid 2px rgb(225, 225, 225);
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-inline: 1rem;
+    outline: none;
+}
+input:focus {
+    border-color: rgb(50, 50, 50);
+}
+textarea {
+    border-radius: 20px;
+    border: solid 2px rgb(225, 225, 225);
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-inline: 1rem;
+    outline: none;
+}
+textarea:focus {
+    border-color: rgb(50, 50, 50);
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 2rem;
+    /* background-color: #d1d1d1; */
+}
+#search-input{
+    margin: 2rem auto 2rem auto;
+    width: 15rem;
+    max-width: 80dvw;
+}
+#wishlist-results {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding-inline: 3rem; */
+}
+#wishlist-results form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    max-width: 20rem;
+    padding: 0.75rem;
+    margin-inline: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    gap: 0.5rem;
+    border: solid 2px rgb(225, 225, 225);
+    transition-duration: 0.4s;
+}
+#wishlist-results form:hover {
+    background-color: rgb(225, 225, 225);
+}
+#wishlist-results form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    min-width: 8rem;
+}
+.wishlist_info {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* background-color: #c7c7c7; */
+}
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding-inline: 2.5%; */
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 1rem;
+    height: 8rem;
+    padding: 0.75rem;
+    margin-inline: 0.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    border: solid 2px rgb(225, 225, 225);
+    width: 35rem;
+    /* background-color: #f6f6f6; */
+}
+.item img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.5rem;
+    /* background-color: #979797; */
+}
+.item > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-break: break-word;
+    text-wrap: break-word;
+    text-align: justify;
+}
+
+.item > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+h2 {margin: 0;}
+p {margin: 0;color: grey}
+.preview{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+.add_new{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    border-radius: 12px;
+}
+.add_new input, textarea{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.add_new label{
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+.login_box {
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25rem;
+    max-width: 90dvw;
+    border-radius: 12px;
+}
+.login_box div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(55, 55, 55);
+    border: solid 2px rgb(55, 55, 55);
+    font-size: 1rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    width: fit-content;
+    height: fit-content;
+}
+button:hover {
+    background-color: rgb(85, 85, 85);
+}
+.button_light {
+    padding: 0.4rem;
+    color: rgb(45, 45, 45);
+    background-color: rgb(210, 210, 210);
+    border-color: rgb(210, 210, 210);
+}
+.button_light:hover {
+    background-color: rgb(230, 230, 230);
+}
+.items form,
+.button_new {
+    border-style: solid;
+    border-width: 2px;
+    font-size: 1rem;
+    white-space: nowrap;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    width: fit-content;
+    height: fit-content;
+}
+.button_new {
+    padding: 0.25rem;
+    color: rgb(45, 45, 45);
+    background-color: rgb(210, 210, 210);
+    border-color: rgb(210, 210, 210);
+}
+.button_new:hover {
+    background-color: rgb(230, 230, 230);
+}
+.button_view {
+    padding: 0.4rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 120, 45);
+    border-color: rgb(40, 120, 45);
+}
+.button_view:hover {
+    background-color: rgb(50, 150, 55);
+}
+.button_show {
+    padding: 0.4rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 110, 220);
+    border-color: rgb(30, 110, 220);
+}
+.button_show:hover {
+    background-color: rgb(50, 140, 240);
+}
+.button_edit {
+    padding: 0.4rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(240, 130, 0);
+    border-color: rgb(240, 130, 0);
+}
+.button_edit:hover {
+    background-color: rgb(250, 160, 50);
+}
+.button_delete {
+    padding: 0.4rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(180, 40, 40);
+    border-color: rgb(180, 40, 40);
+}
+.button_delete:hover {
+    background-color: rgb(210, 60, 60);
+}
+.button_clear {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+.button_clear:hover {
+    background-color: transparent;
+}
+.img_login {
+    height: 1.5rem;
+    width: auto;
+    /* margin: 0; */
+    /* filter: brightness(0) invert(1); */
+}
+.img_icons {
+    height: 2rem;
+    margin: 0;
+}
+
+.switch {
+    width: fit-content;
+    height: fit-content;
+}
+.switch-option {
+    display: none;
+}
+.switch-label {
+    padding: 0.25rem;
+    padding-inline: 0.5rem;
+    margin-inline: 0.5dvw;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0.5rem;
+    background-color: rgb(210, 210, 210);
+}
+.switch-label:hover {
+    background-color: rgb(230, 230, 230);
+}
+.switch-option:checked:nth-of-type(1) ~ .switch-label:nth-of-type(1),
+.switch-option:checked:nth-of-type(2) ~ .switch-label:nth-of-type(2),
+.switch-option:checked:nth-of-type(3) ~ .switch-label:nth-of-type(3),
+.switch-option:checked:nth-of-type(4) ~ .switch-label:nth-of-type(4),
+.switch-option:checked:nth-of-type(5) ~ .switch-label:nth-of-type(5) {
+    color: rgb(255, 255, 255);
+    background-color: rgb(55, 55, 55);
+}
+.toggle-password {
+    cursor: pointer;
+    user-select: none;
+}
+@media only screen and (max-width: 600px) {
+    .computer {
+        display: none;
+    }
+    .phone {
+        display: flex;
+    }
+    header {
+        font-size: 3rem;
+        height: 4rem;
+    }
+    header img {
+        height: 2rem;
+        width: 2rem;
+    }
+    header form{
+        font-size: 1rem;
+    }
+    .wishlist_info {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+    .wishlist_info div {
+        display: flex;
+    }
+    #wishlist-results form {
+        max-width: 80%;
+        min-width: 50%;
+    }
+    button {
+        padding: 0.25rem;
+    }
+} 
